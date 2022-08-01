@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from django.views import generic
+from .models import Uv
 
-# Create your views here.
+
+class UvListView(generic.ListView):
+    model = Uv
+    template_name = 'uvs/uv_list.html'
+    context_object_name = 'uvs'
+

@@ -1,0 +1,9 @@
+{% extends '_base.html' %}
+
+{% block page_title %} لیست یو وی ها{% endblock %}
+
+{% block content  %}
+    {% for uv in uvs %}
+        <h1>{{ uv.brand }}</h1>
+    {% endfor %}
+{% endblock %}
