@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+
+{% block page_title %} برچسب {{ uv.brand }}{% endblock %}
+
+{% block content  %}
+    <h1>{{ uv.brand }}</h1>
+    <p>{{ uv.description }}</p>
+    <h3>{{ uv.percent }}</h3>
+    <h4>{{ uv.price }}</h4>
+{% endblock %}

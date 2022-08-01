@@ -4,6 +4,7 @@
 
 {% block content  %}
     {% for uv in uvs %}
-        <h1>{{ uv.brand }}</h1>
+        <a href="{{ uv.get_absolute_url }}"><h1>{{ uv.brand }}</h1></a>
+        <p>{{ uv.percent }}</p>
     {% endfor %}
 {% endblock %}
